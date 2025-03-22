@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/About";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
@@ -46,10 +46,8 @@ const App = () => {
 			/>
 			<Alert alert={alert} />
 			<div className="container my-3">
-				<Routes>
-					<Route exact path="/about" element={<About darkMode={darkMode} />} />
-					<Route exact path="/textform" element={<TextForm showAlert={showAlert} darkMode={darkMode} />} />
-				</Routes>
+				
+				<TextForm showAlert={showAlert} darkMode={darkMode} />
 			</div>
 		</>
 	);

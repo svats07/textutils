@@ -1,14 +1,13 @@
 import React from "react";
 import "../StyleFiles/Navbar.css";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = (props) => {
-	const navigate = useNavigate();
+
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 				<div className="container-fluid">
-				<div className="navbar-brand" onClick={() => navigate("/textform")} style={{ cursor: "pointer" }}>
+				<div className="navbar-brand" style={{ cursor: "pointer" }}>
                         {props.title}
                     </div>
 					<button
@@ -25,12 +24,12 @@ const Navbar = (props) => {
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 							<li className="nav-item">
-							<button className="nav-link active btn btn-link" onClick={() => navigate("/textform")}>
+							<button className="nav-link active btn btn-link" >
                                     Home
                                 </button>
 							</li>
 							<li className="nav-item">
-							<button className="nav-link btn btn-link" onClick={() => navigate("/about")}>
+							<button className="nav-link btn btn-link">
                                     About
                                 </button>
 							</li>
